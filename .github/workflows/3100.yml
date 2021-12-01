@@ -12,7 +12,7 @@ on:
     - cron: 0 16 * * *
 
 env:
-  REPO_URL: https://github.com/shalftdd/lede
+  REPO_URL: https://github.com/shalftdd/openwrt
   REPO_BRANCH: master
   FEEDS_CONF: Lean/R3P/feeds.conf.default
   CONFIG_FILE: Lean/R3P/3100.config
