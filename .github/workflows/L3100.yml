@@ -82,8 +82,7 @@ jobs:
         make download -j$(nproc)
         find dl -size -1024c -exec ls -l {} \;
         find dl -size -1024c -exec rm -f {} \;
-        make package/feeds/luci/luci-base/compile V=99
-        
+          
     - name: 编译固件
       id: compile
       run: |
