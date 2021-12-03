@@ -13,7 +13,7 @@ on:
 
 env:
   REPO_URL: https://github.com/shalftdd/lede
-  REPO_BRANCH: master
+  REPO_tag: 20200915
   FEEDS_CONF: Lean/R3P/feeds.conf.default
   CONFIG_FILE: Lean/R3P/3100.config
   DIY_P1_SH: Lean/R3P/diy-part1.sh
