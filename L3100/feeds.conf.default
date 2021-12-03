@@ -6,4 +6,4 @@ src-git freifunk https://github.com/freifunk/openwrt-packages.git;openwrt-19.07
 src-git lienol https://github.com/Lienol/openwrt-package.git;main
 src-git other https://github.com/Lienol/openwrt-package.git;other
 src-git small8 https://github.com/kenzok8/small-package
-#src-git kiddin9 https://github.com/kiddin9/openwrt-packages
+src-git kiddin9 https://github.com/kiddin9/openwrt-packages
