@@ -112,7 +112,6 @@ jobs:
         mkdir firmware && find openwrt/bin/targets/*/*/ -maxdepth 1 \
         -name "*3100*" \
         -or -name "*k3*" \
-        -or -name "*3150*" \
         | xargs -i mv -f {} ./firmware/
         cp openwrt/.config  ./firmware/${{ env.date1 }}_${{ env.OPENWRT_NAME }}_${{ env.DEVICE_NAME }}.config
         cd firmware
