@@ -1,5 +1,6 @@
 #!/bin/bash
 #
+rm -rf ./package/lean/luci-theme-argon
 svn co  https://github.com/moruiris/openwrt-packages/trunk/luci-app-adguardhome ./package/moruiris/luci-app-adguardhome
 svn co  https://github.com/moruiris/openwrt-packages/trunk/luci-app-chinadns-ng ./package/moruiris/luci-app-chinadns-ng
 svn co  https://github.com/moruiris/openwrt-packages/trunk/openwrt-passwall/chinadns-ng ./package/moruiris/chinadns-ng
