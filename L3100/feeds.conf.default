@@ -5,5 +5,5 @@ src-git telephony https://git.openwrt.org/feed/telephony.git;openwrt-19.07
 src-git freifunk https://github.com/freifunk/openwrt-packages.git;openwrt-19.07
 src-git lienol https://github.com/Lienol/openwrt-package.git;main
 src-git other https://github.com/Lienol/openwrt-package.git;other
-src-git moruiris https://github.com/moruiris/openwrt-packages
-src-git Boos4721 https://github.com/Boos4721/OpenWrt-Packages
+src-git small8 https://github.com/kenzok8/small-package
+#src-git kiddin9 https://github.com/kiddin9/openwrt-packages
