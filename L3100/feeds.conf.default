@@ -8,3 +8,4 @@ src-git other https://github.com/Lienol/openwrt-package.git;other
 src-git small8 https://github.com/kenzok8/small-package
 src-git kiddin9 https://github.com/kiddin9/openwrt-packages
 src-git moruiris https://github.com/moruiris/openwrt-packages
+src-git ntlf9t https://github.com/ntlf9t/luci-app-easymesh
