@@ -1,5 +1,5 @@
 #!/bin/bash
 #
-rm -rf ./package/lean/luci-theme-argon
-cd ./package
-git clone https://github.com/jerrykuku/luci-theme-argon.git
+cd lede/package/lean
+rm -rf luci-theme-argon
+git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git 
