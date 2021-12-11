@@ -35,13 +35,13 @@ jobs:
         pkg-config zlib1g-dev libgmp3-dev libmpc-dev libmpfr-dev libncurses5-dev libltdl-dev wget
     - name: Clone source code
       run: |
-        git clone --depth=1 https://github.com/hanwckf/rt-n56u.git /opt/rt-n56u
+        git clone --depth=1 https://github.com/keke1023/Padavan.git /opt/rt-n56u
         cd /opt/rt-n56u/toolchain-mipsel
         sh dl_toolchain.sh
         mkdir -p /opt/images/
     - name: Build Firmware
       env:
-        TNAME: K2P_nano
+        TNAME: MI-R3P-breed
       run: |
         cd /opt/rt-n56u/trunk
         if [ ! -f configs/templates/$TNAME.config ] ; then
@@ -92,8 +92,8 @@ jobs:
         echo "CONFIG_FIRMWARE_INCLUDE_FFMPEG_NEW=y" >> .config   #使用FFMPEG新版本
         echo "CONFIG_FIRMWARE_INCLUDE_XUPNPD=y" >> .config       #使用用于IPTV的XUPNPD
         echo "CONFIG_FIRMWARE_INCLUDE_DOGCOM=n" >> .config       #删除用于Drcom的工具DOGCOM
-        echo "CONFIG_FIRMWARE_INCLUDE_SHADOWSOCKS=n" >> .config  #删除SS plus+
-        echo "CONFIG_FIRMWARE_INCLUDE_DNSFORWARDER=n" >> .config #删除DNSFORWARDER
+        echo "CONFIG_FIRMWARE_INCLUDE_SHADOWSOCKS=y" >> .config  #删除SS plus+
+        echo "CONFIG_FIRMWARE_INCLUDE_DNSFORWARDER=y" >> .config #删除DNSFORWARDER
         echo "CONFIG_FIRMWARE_INCLUDE_VLMCSD=y" >> .config       #使用用于KMS的工具VLMCSD
         echo "CONFIG_FIRMWARE_INCLUDE_TTYD=y" >> .config         #使用网页终端模拟器TTYD
         echo "CONFIG_FIRMWARE_INCLUDE_NAPT66=y" >> .config       #使用用于二级路由、教育网分发IPv6地址的NAPT66
